@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">TimerService</string>
+    <string name="multQuestion">What is Kurt Vonnegut\'s most famous book?</string>
+    <string-array name="books">
+        <item>Player Piano</item>
+        <item>Cat\'s Cradle</item>
+        <item>Mother Night</item>
+        <item>Sirens of Titan</item>
+        <item>Slaughterhouse Five</item>
+    </string-array>
+    <string name="sl5">Slaughterhouse Five</string>
+
+    <string name="secondQuestion">What is Henry Miller\'s most famous book?</string>
+    <string-array name="moreBooks">
+        <item>Tropic of Cancer</item>
+        <item>Black Spring</item>
+        <item>Tropic of Capricorn</item>
+        <item>The Colossus of Maroussi</item>
+        <item>The Air-Conditioned Nightmare</item>
+        <item>Big Sur and the Oranges of Hieronymus Bosch</item>
+        <item>Quiet Days in Clichy</item>
+        <item>Sexus</item>
+        <item>Nexus</item>
+        <item>Plexus</item>
+    </string-array>
+    <string name="tropicCancer">Tropic of Cancer</string>
+    <string name="submit">Submit</string>
+
+    <string name="timerOn">Timer On</string>
+    <string name="timerOff">Timer Off</string>
+    <string name="timeLimitText">Set Time Limit\n(seconds)</string>
+    <string name="tenseconds">10</string>
+    <string name="twentyseconds">20</string>
+    <string name="thirtyseconds">30</string>
+    <string name="sixtyseconds">60</string>
+
+    <string name="textQuestion">What is Kurt Vonnegut\'s first book?</string>
+    <string name="playerPiano">Player Piano</string>
+
+    <string name="hint">Enter your answer</string>
+    <string name="toastMessage">Incorrect. Try Again.</string>
+    <string name="toastTime">You\'ve run out of time.</string>
+    <string name="endTime">You\'ve run out of time.</string>
+    <string name="endResults">Click here to see results.</string>
+
+    <string name="share">Share Results</string>
+    <string name="failQuizz">"Unfortunately you did not pass the quiz. Here are your results:\n"</string>
+    <string name="passQuizz">Congrats! You passed the quiz! \nHere are your results:\n</string>
+
+    <string name="chooser">Share results via...</string>
+
+    <string name="shareResults">Check out my results from the Quiz App!\n</string>
+
+
+</resources>

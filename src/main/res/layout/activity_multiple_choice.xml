@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hfad.timerservice.MultipleChoiceActivity" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/textbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:text="@string/multQuestion"
+            />
+
+        <Spinner
+            android:id="@+id/selectbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:entries="@array/books"
+            />
+
+        <TextView
+            android:id="@+id/secondQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:text="@string/secondQuestion"
+            />
+
+        <Spinner
+            android:id="@+id/secondSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:entries="@array/moreBooks"
+            />
+
+        <TextView
+            android:id="@+id/time_start_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_continuous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:textSize="24sp" />
+
+
+        <ToggleButton
+            android:id="@+id/toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:textOn="@string/timerOn"
+            android:textOff="@string/timerOff"
+            android:onClick="onToggleButtonClicked"/>
+
+        <ToggleButton
+            android:id="@+id/toggle_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:drawableTop="@drawable/watch"
+            android:textOn=""
+            android:textOff=""
+            android:onClick="onToggleButtonClicked"/>
+
+        <TextView
+            android:id="@+id/timeLimitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="start"
+            android:text="@string/timeLimitText"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tenseconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tenseconds"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/twentyseconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twentyseconds"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/thirtyseconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirtyseconds"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/sixtyseconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sixtyseconds"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSwitchClick"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:visibility="visible"
+            android:onClick="onClickSubmit"
+            android:text="@string/submit"
+            />
+
+        <ImageButton
+            android:id="@+id/imageSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:visibility="gone"
+            android:onClick="onClickSubmit"
+            android:src="@drawable/submit"
+            />
+
+    </LinearLayout>
+</ScrollView>
